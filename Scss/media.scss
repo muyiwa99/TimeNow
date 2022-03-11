@@ -1,0 +1,256 @@
+// Mobile Design Pricing
+@media (max-width: 450px) {
+  .check {
+    display: block !important;
+    margin-left: 17rem;
+  }
+  #main {
+    // Used to seleect the 2nd and all elements
+    .nav li:nth-child(n + 2) {
+      display: none;
+    }
+
+    #pricing-box .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+// Tablet Design Pricing
+@media (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+  #main {
+    #header-p {
+      .marginLeft {
+        margin-left: 8.3rem;
+      }
+    }
+
+    #pricing-text {
+      margin-top: 4rem;
+      h3 {
+        font-size: 3rem;
+      }
+      p {
+        width: 100%;
+      }
+      .bill {
+        margin-bottom: 2rem;
+      }
+    }
+
+    #pricing-box .box {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 3rem;
+      font-size: smaller;
+      height: auto;
+    }
+    #footer .container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .right {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+// Mobile Home design
+
+@media (max-width: 650px) {
+  main {
+    #header .container {
+      display: flex;
+      flex-direction: column;
+      .left {
+        height: 47vh;
+        .txt-sect {
+          h1 {
+            font-size: 1.8rem;
+            margin-top: -1.2rem;
+          }
+          p {
+            font-size: 1rem;
+            font-weight: lighter;
+          }
+
+          .links {
+            display: flex;
+            flex-direction: row;
+
+            .button {
+              margin-top: -1rem;
+            }
+          }
+          .data {
+            margin-top: -1.3rem;
+          }
+        }
+      }
+
+      .right {
+        height: 50vh;
+        .img {
+          height: auto;
+          width: 73%;
+          margin-left: -2rem;
+          margin-top: 1rem;
+        }
+        .button-1 {
+          display: none;
+        }
+      }
+      .nav li:nth-child(n + 2) {
+        display: none;
+      }
+    }
+
+    #section-1 {
+      height: 55vh;
+      .left-col {
+        display: flex;
+        flex-direction: column !important;
+        h2 {
+          font-size: small;
+          margin-top: 2rem;
+        }
+      }
+
+      .right-col {
+        width: 85%;
+        p {
+          margin-left: -2.4rem;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    #section-2 {
+      height: auto;
+      .left-2 {
+        margin-top: -1.5rem;
+        .p {
+          width: auto;
+          font-size: 0.9rem;
+        }
+      }
+
+      .right-2 {
+        .p {
+          width: auto;
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    #footer {
+      .left-3 {
+        display: grid;
+        grid-template-columns: repeat(2, 100px);
+      }
+    }
+  }
+}
+
+// Tablet design Home
+
+@media (max-width: 800px) {
+  main {
+    .container {
+      width: auto;
+    }
+    #header {
+      .left {
+        margin: 3rem;
+        .nav ul {
+          margin-bottom: 4.5rem;
+        }
+        .txt-sect {
+          h1 {
+            font-size: 2.3rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+          .links {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+          }
+          .data {
+          }
+        }
+      }
+      .right {
+        img {
+          height: 59%;
+          width: 74%;
+        }
+        .button-1 {
+          margin-left: 14.4rem;
+        }
+      }
+    }
+    #section-1 {
+      margin-bottom: 8rem;
+      .container {
+        flex-direction: column;
+        gap: 2rem;
+        .left-col {
+          display: flex;
+          flex-direction: row;
+          gap: 1.3rem;
+          width: 86%;
+          margin: auto;
+          h2 {
+            font-size: 2.4rem;
+          }
+          .icon {
+            flex-wrap: wrap;
+          }
+        }
+
+        .right-col {
+          max-width: 100%;
+        }
+      }
+    }
+
+    #section-2 {
+      height: 85vh !important;
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        .left-2 {
+          margin-bottom: 3rem;
+          .p {
+            max-width: 1005%;
+          }
+        }
+
+        .right-2 {
+          margin-left: 0.3rem;
+          max-width: 100%;
+        }
+      }
+    }
+
+    #footer .container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .right {
+        margin-left: -0.3rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
